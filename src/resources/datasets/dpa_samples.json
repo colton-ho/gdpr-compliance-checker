@@ -1,0 +1,61 @@
+{
+  "dpa_samples": [
+    {
+      "title": "Sample DPA 1",
+      "parties": {
+        "data_controller": "Company A",
+        "data_processor": "Company B"
+      },
+      "effective_date": "2023-01-01",
+      "termination_date": "2024-01-01",
+      "data_processing_purpose": "To provide data analytics services.",
+      "data_types": [
+        "Personal Data",
+        "Sensitive Data"
+      ],
+      "security_measures": [
+        "Encryption",
+        "Access Control"
+      ],
+      "sub_processors": [
+        {
+          "name": "Sub-Processor 1",
+          "location": "Country X"
+        }
+      ],
+      "gdpr_compliance": {
+        "lawful_basis": "Contract",
+        "data_subject_rights": [
+          "Right to Access",
+          "Right to Erasure"
+        ]
+      }
+    },
+    {
+      "title": "Sample DPA 2",
+      "parties": {
+        "data_controller": "Company C",
+        "data_processor": "Company D"
+      },
+      "effective_date": "2023-02-01",
+      "termination_date": "2025-02-01",
+      "data_processing_purpose": "To manage customer relationships.",
+      "data_types": [
+        "Contact Information",
+        "Transaction Data"
+      ],
+      "security_measures": [
+        "Data Anonymization",
+        "Regular Security Audits"
+      ],
+      "sub_processors": [],
+      "gdpr_compliance": {
+        "lawful_basis": "Consent",
+        "data_subject_rights": [
+          "Right to Rectification",
+          "Right to Data Portability"
+        ]
+      }
+    }
+  ]
+}

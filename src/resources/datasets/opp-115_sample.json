@@ -1,0 +1,34 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "text": "We collect personal data such as name, email, and phone number.",
+      "data_practice": "Data Collection",
+      "description": "This practice involves gathering personal information from users."
+    },
+    {
+      "id": "2",
+      "text": "Your data will be used to provide services and improve user experience.",
+      "data_practice": "Data Usage",
+      "description": "This practice outlines how the collected data will be utilized."
+    },
+    {
+      "id": "3",
+      "text": "We share your data with third-party service providers for processing.",
+      "data_practice": "Data Sharing",
+      "description": "This practice describes the sharing of personal data with external entities."
+    },
+    {
+      "id": "4",
+      "text": "You have the right to access, rectify, and delete your personal data.",
+      "data_practice": "User Rights",
+      "description": "This practice informs users of their rights regarding their personal data."
+    },
+    {
+      "id": "5",
+      "text": "We retain your data for as long as necessary to fulfill the purposes outlined.",
+      "data_practice": "Data Retention",
+      "description": "This practice explains the duration for which personal data will be stored."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+    "rules": [
+        {
+            "id": "GDPR-Article-13",
+            "description": "Information to be provided where personal data are collected from the data subject.",
+            "requirements": [
+                "Identity and contact details of the controller",
+                "Purpose of processing",
+                "Legal basis for processing",
+                "Categories of personal data",
+                "Recipients of personal data",
+                "Retention period",
+                "Rights of the data subject"
+            ]
+        },
+        {
+            "id": "GDPR-Article-14",
+            "description": "Information to be provided where personal data have not been obtained from the data subject.",
+            "requirements": [
+                "Identity and contact details of the controller",
+                "Purpose of processing",
+                "Legal basis for processing",
+                "Categories of personal data",
+                "Source of the personal data",
+                "Retention period",
+                "Rights of the data subject"
+            ]
+        },
+        {
+            "id": "GDPR-Article-6",
+            "description": "Lawfulness of processing.",
+            "requirements": [
+                "Processing must be lawful and fair",
+                "Data subject must be informed about the processing",
+                "Legal basis must be established"
+            ]
+        },
+        {
+            "id": "GDPR-Article-32",
+            "description": "Security of processing.",
+            "requirements": [
+                "Appropriate technical and organizational measures must be implemented",
+                "Risk assessment must be conducted"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "templates": {
+        "GDPR_Article_13": {
+            "title": "Information to be provided where personal data are collected from the data subject",
+            "fields": [
+                "Identity and contact details of the controller",
+                "Purpose of the processing",
+                "Legal basis for the processing",
+                "Recipients of personal data",
+                "Retention period",
+                "Rights of the data subject"
+            ]
+        },
+        "GDPR_Article_14": {
+            "title": "Information to be provided where personal data have not been obtained from the data subject",
+            "fields": [
+                "Identity and contact details of the controller",
+                "Categories of personal data",
+                "Purpose of the processing",
+                "Legal basis for the processing",
+                "Recipients of personal data",
+                "Retention period",
+                "Source of the personal data"
+            ]
+        },
+        "GDPR_Article_28": {
+            "title": "Processor",
+            "fields": [
+                "Identity of the processor",
+                "Subject matter of the processing",
+                "Duration of the processing",
+                "Nature and purpose of the processing",
+                "Type of personal data",
+                "Categories of data subjects",
+                "Obligations and rights of the controller"
+            ]
+        },
+        "GDPR_Article_30": {
+            "title": "Records of processing activities",
+            "fields": [
+                "Name and contact details of the controller",
+                "Purposes of the processing",
+                "Description of categories of data subjects and personal data",
+                "Categories of recipients",
+                "Transfers to third countries",
+                "Retention periods",
+                "General description of technical and organizational security measures"
+            ]
+        }
+    }
+}

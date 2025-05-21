@@ -1,0 +1,66 @@
+Strengths (Compliant):
+Lawful basis: All main data processing activities have a clear legal basis (Art. 6): Legal basis for processing (GDPR-Article-13), Legal basis for processing (GDPR-Article-14), Legal basis must be established (GDPR-Article-6).
+Article 13 information: Includes:
+- Identity and contact info of data controller.
+- Purposes of processing.
+- Categories of data collected.
+- Recipients of data.
+- Data subject rights (access, rectification, erasure, objection, portability, complaint).
+DPO contact provided.
+Article 32: Security measures are listed (encryption, access control, staff training, penetration testing).
+
+Missing/Non-Compliant Areas:
+- Data subject must be informed about the processing (GDPR-Article-6)
+- Retention period (GDPR-Article-13)
+- Retention period (GDPR-Article-14)
+- Risk assessment must be conducted (GDPR-Article-32)
+- Source of the personal data (GDPR-Article-14)
+
+Conclusion:
+This document is a strong example of a GDPR-compliant privacy policy. It covers all key areas for transparency, user rights, and security measures.
+
+--- Extraction Details (for audit/debug) ---
+
+Sections Detected:
+- Privacy Policy: 
+- 1. Data Controller: Acme Innovations Ltd. 
+Contact: privacy@acmeinnovations.com
+- 2. Purposes and Legal Basis for Processing: We process your personal data for the following purposes: 
+
+•  Account registration and service provision (Legal basis: Contractual necessity, Art. 
+
+6(1)(b) GDPR) 
+
+•  Marketing communications (Legal basis: Consent, Art. 6(1)(a) GDPR) 
+•  Compliance with legal obligations (Legal basis: Art. 6(1)(c) GDPR) 
+You may withdraw your consent at any time via our privacy portal.
+- 3. Categories of Personal Data Collected: •  Name, contact information (email, address, phone) 
+•  Usage data and cookies 
+•  Payment information
+- 4. Recipients of Personal Data: Data may be shared with IT service providers, payment processors, and regulatory authorities, 
+only as required.
+- 5. Retention Periods: Personal data is retained as long as your account is active and for up to 6 years after closure for 
+legal and audit purposes.
+- 6. Your Rights: You have the right to access, rectify, erase, restrict, or object to the processing of your data. You 
+also have the right to data portability and to lodge a complaint with your national data protection 
+authority.
+- 7. Data Protection Officer: Contact: dpo@acmeinnovations.com
+- 8. Technical and Organizational Measures (Art. 32): •  All data is encrypted in transit and at rest 
+•  Regular access reviews and role-based access control 
+•  Security awareness training for staff 
+•  Annual penetration testing and incident response protocols 
+
+Last updated: 25 March 2025
+
+Lists/Tables Extracted:
+- •  Account registration and service provision (Legal basis: Contractual necessity, Art.
+- 6(1)(b) GDPR)
+- •  Marketing communications (Legal basis: Consent, Art. 6(1)(a) GDPR)
+•  Compliance with legal obligations (Legal basis: Art. 6(1)(c) GDPR)
+- •  Name, contact information (email, address, phone)
+•  Usage data and cookies
+•  Payment information
+- •  All data is encrypted in transit and at rest
+•  Regular access reviews and role-based access control
+•  Security awareness training for staff
+•  Annual penetration testing and incident response protocols

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GDPR Compliance Checker</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
+        }
+        .gdpr-card {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+            padding: 2.5rem 2rem 2rem 2rem;
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+        .btn-reset {
+            margin-left: 1rem;
+        }
+        .compliance-section {
+            background: #f1f5f9;
+            border-radius: 10px;
+            padding: 1.2rem;
+            margin-bottom: 1.5rem;
+        }
+        .compliance-chart {
+            background: #f8fafc;
+            border-radius: 10px;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="gdpr-card mx-auto" style="max-width: 700px;">
+        <h1 class="mb-4 text-center">GDPR Compliance Checker</h1>
+        <form id="gdprForm" method="post" enctype="multipart/form-data" autocomplete="off">
+            <div class="mb-3">
+                <label for="doc_type" class="form-label">Document Type</label>
+                <select class="form-select" id="doc_type" name="doc_type">
+                    <option value="">Select type</option>
+                    <option value="privacy_policy">Privacy Policy</option>
+                    <option value="dpa">Data Processing Agreement (DPA)</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="content" class="form-label">Document Content</label>
+                <textarea class="form-control" id="content" name="content" rows="10"></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="file" class="form-label">Or drag and drop a file here</label>
+                <input class="form-control" type="file" id="file" name="file" accept=".txt,.json,.pdf,.doc,.docx">
+            </div>
+            <button type="submit" class="btn btn-primary">Check Compliance</button>
+            <button type="button" class="btn btn-secondary btn-reset" id="resetBtn">Reset</button>
+        </form>
+        <div class="form-text mb-3">Supported file types: .txt, .json, .pdf, .doc, .docx</div>
+        {% if error %}
+            <div class="alert alert-danger mt-3">{{ error }}</div>
+        {% endif %}
+        {% if compliance_results is not none %}
+            <div class="compliance-section mt-4">
+                <h3>Compliance Results</h3>
+                <pre>{{ compliance_results|safe }}</pre>
+            </div>
+        {% endif %}
+        {% if compliance_status is not none %}
+            <div class="compliance-section mt-4">
+                <h3>Compliance Status</h3>
+                <pre>{{ compliance_status|safe }}</pre>
+            </div>
+        {% endif %}
+        {% if chart_filename %}
+            <div class="compliance-chart mt-4">
+                <img src="/uploads/{{ chart_filename }}" alt="Compliance Chart" class="img-fluid" style="max-width:400px;">
+            </div>
+        {% endif %}
+        <!-- Add a button for downloading the report -->
+        {% if report_filename %}
+        <div class="text-center mt-4">
+            <a href="/download_report/{{ report_filename }}" class="btn btn-primary">Download Compliance Report</a>
+        </div>
+        {% endif %}
+    </div>
+</div>
+<script>
+// Drag and drop area for file upload
+const fileInput = document.getElementById('file');
+const form = document.getElementById('gdprForm');
+form.addEventListener('dragover', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    form.classList.add('border-primary');
+});
+form.addEventListener('dragleave', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    form.classList.remove('border-primary');
+});
+form.addEventListener('drop', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    if (e.dataTransfer.files.length) {
+        fileInput.files = e.dataTransfer.files;
+    }
+    form.classList.remove('border-primary');
+});
+// Reset button clears form and results without page refresh
+const resetBtn = document.getElementById('resetBtn');
+resetBtn.addEventListener('click', function() {
+    form.reset();
+    document.getElementById('content').value = '';
+    fileInput.value = '';
+    // Remove results and chart
+    document.querySelectorAll('.compliance-section, .compliance-chart, .alert-danger').forEach(el => el.remove());
+});
+</script>
+</body>
+</html>
