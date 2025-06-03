@@ -35,7 +35,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\kira2\Documents\gdpr-compliance-checker\gdpr-compliance-checker\.venv"
+VIRTUAL_ENV="C:\Users\kira2\Documents\GitHub\gdpr-compliance-checker\.venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

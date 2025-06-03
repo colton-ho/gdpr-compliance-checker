@@ -1,4 +1,4 @@
-#!C:\Users\kira2\Documents\gdpr-compliance-checker\gdpr-compliance-checker\.venv\Scripts\python.exe
+#!C:\Users\kira2\Documents\GitHub\gdpr-compliance-checker\.venv\Scripts\python.exe
 
 ##############################################################################
 #
